@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    h3 {
+        text-align: center;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .centered-div {
+        margin: auto;
+        text-align: center;
+    }
+
+    #img-border {
+        box-shadow: 10px 10px 20px rgb(0, 183, 255);
+        
+
+        height: auto;
+    }
+    #img-border:hover{
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes float {
+        0% {
+            transform: (0);
+            scale: (0.5);
+            opacity: 0.3;
+        }
+
+        50% {
+            transform: translateY(-100px) scale(1);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: translateY(-200px) scale(0.5);
+            opacity: 0;
+        }
+    }
+
+    /* Add this to your <style> section */
+
+
+
+    .hearts {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        /* Full viewport height */
+        background-color: #f0f8ff;
+        /* Light background color */
+    }
+
+    .heart {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: pink;
+        clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 80%, 20% 100%, 0% 35%);
+        opacity: 0;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .heart:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .heart:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+
+    .heart:nth-child(3) {
+        animation-delay: 1s;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0) scale(0.5);
+            opacity: 0.3;
+        }
+
+        50% {
+            transform: translateY(-100px) scale(1);
+            opacity: 0.7;
+        }
+
+        100% {
+            transform: translateY(-200px) scale(0.5);
+            opacity: 0;
+        }
+    }
+
+
+    h1 {
+        text-align: center;
+        height: 49%;
+        font-size: 6.4rem;
+
+    }
+
+    h2 {
+        text-align: center;
+        font-stretch: expanded;
+        font-size: 4.8rem;
+    }
+
+    li {
+        font-size: 3.2em;
+        font-family:
+            'Chango', cursive;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li::before {
+        content: "🐹";
+        margin-right: 10px;
+    }
+
+    li:nth-child(2)::before {
+        content: "👨‍🦳";
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-20px);
+        }
+
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+
+        </ul>
+
+    </div>
+    .heart:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    }
+    <h2>Daughters Give Daddy a Makeover</h2>
+
+
+
+
+</body>
+
+</html>
